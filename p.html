@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev-Journal | Track Your Progress</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Interactive <span>Dev Journal</span></h1>
+            <p>Document your daily progress and technical breakthroughs.</p>
+        </header>
+
+        <section class="journal-form">
+            <input type="text" id="entryTitle" placeholder="Project Title or Task Name..." required>
+            <textarea id="entryContent" placeholder="What did you learn or solve today?" rows="4" required></textarea>
+
+            <div class="form-footer">
+                <select id="entryTag">
+                    <option value="Frontend">Frontend</option>
+                    <option value="Backend">Backend</option>
+                    <option value="Bug Fix">Bug Fix</option>
+                    <option value="Idea">Idea</option>
+                </select>
+                <button id="addBtn">Log Entry</button>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="journalFeed"></section>
+    </div>
+
+    <script src="p.js"></script>
+</body>
+</html>
